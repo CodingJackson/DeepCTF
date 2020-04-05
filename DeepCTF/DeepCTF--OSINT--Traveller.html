@@ -1,0 +1,22 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Traveller</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body><div class="main"><div class="tree">
+<p><strong>Index</strong></p>
+<p><a href="DeepCTF.html">DeepCTF</a></p>
+
+<ol>
+<li><a href="DeepCTF--OSINT.html">OSINT</a></li>
+<ol>
+<li><a href="DeepCTF--OSINT--History.html">History</a></li>
+<li><a href="DeepCTF--OSINT--1_or_2.html">1 or 2?</a></li>
+<li><a href="DeepCTF--OSINT--SecXML.html">SecXML</a></li>
+<li><a href="DeepCTF--OSINT--Life.html">Life</a></li>
+<li><a href="DeepCTF--OSINT--Traveller.html">Traveller</a></li>
+</ol></ol></div>
+<div class="page"><h1><b><u>Traveller</u></b></h1><img src="images/7-1.png" alt="images/7-1.png" /><br /><br />As for most of you have guessed this challenge very easily...<br /><br />The <a href="https://archive.org/">WAYBACKMACHINE</a> or <a href="https://archive.org/">The InternetArchive</a><br /><img src="images/7-2.png" alt="images/7-2.png" /><br /><br /><em>For those who don't know what this site is...</em><br /><br /><strong>Internet Archive</strong> is a collection of previous versions of almost all the sites... ( Not all, because either for backup many big companies store the previous versions of their websites... In order to maintain their <em>changelogs</em>. But not all ). And the good thing is it is freely available to us to view and check out (maybe some useful credentials) what are the changes they have recently made...<br /><br />Now back to the chall...<br /> <br />so what we gotta do here is append the url with the given info...<br /><br />1) 20200404072455<br />2) <a href="http://140.238.254.6/">http://140.238.254.6/</a><br /><br />And after that it will look like this...<br /><br /><a href="https://archive.org/20200404072455/http://140.238.254.6/">https://web.archive.org/web/20200404072455/http://140.238.254.6/</a><br /><br />Extra: If you wonder what this rubbish no. is given i.e. 20200404072455<br /><br />I'll break it for you... 2020.04.04.072455<br /><br />Hope you get it now... where this last octet in the the serial is the site number usually which given to each site that is stored on that date...<br /><br />Now after visiting the above link we will get this text written...<br /><br /><span style="color:#000000;background-color:#ffffff;">How you doing?                                                                                                                <br />Here's your                                                                                                                       <br />  flag:ZDMzcHtjMG5ncjR0dWw0dGkwbiRfeTB1J3YzX3RyNHYzbGwzZF9iNGNrX3RpbUV9<br /></span><br /><br />And here we have a base64 string lets decode it...<br /><br /><img src="images/7-3.png" alt="images/7-3.png" /><br /><br />and here we have our flag...<br /><br />flag: d33p{c0ngr4tul4ti0n$_y0u'v3_tr4v3ll3d_b4ck_timE}<br /></div></div>
+</body></html>

@@ -1,0 +1,22 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>1 or 2?</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body><div class="main"><div class="tree">
+<p><strong>Index</strong></p>
+<p><a href="DeepCTF.html">DeepCTF</a></p>
+
+<ol>
+<li><a href="DeepCTF--OSINT.html">OSINT</a></li>
+<ol>
+<li><a href="DeepCTF--OSINT--History.html">History</a></li>
+<li><a href="DeepCTF--OSINT--1_or_2.html">1 or 2?</a></li>
+<li><a href="DeepCTF--OSINT--SecXML.html">SecXML</a></li>
+<li><a href="DeepCTF--OSINT--Life.html">Life</a></li>
+<li><a href="DeepCTF--OSINT--Traveller.html">Traveller</a></li>
+</ol></ol></div>
+<div class="page"><h1><b><u>1 or 2?</u></b></h1><img src="images/4-1.png" alt="images/4-1.png" /><br /><br />Here we are given a link... So lets navigate to the link first...<br /><br /><img src="images/4-2.png" alt="images/4-2.png" /><br /><br />Nothing much here, even the image link given here is broken...<br />So let's hope into the source...<br /><br /><img src="images/4-3.png" alt="images/4-3.png" /><br /><br />Here we have a hint that, “ Did you take a look at the URL? (Images mean alot!!) ”<br /><br />And if you have a look at the image name i.e. 2.jpg... Now I wonder why the question was named 1 or 2... lets change the name to 1.jpg and see what happens...<br /><br /><img src="images/4-4.png" alt="images/4-4.png" /><br /><br />Ahh, here we have the image... lets download it...<br /><br />and see its metadata... with <em>exiftool</em><br /><br /><img src="images/4-5.png" alt="images/4-5.png" /><br /><br />And here we have the name of the photographer lets search it on google...<br /><br /><img src="images/4-6.png" alt="images/4-6.png" /><br /><br />And here we have the hashtag...<br /><br />flag: d33p{#thisisawesome}<br /><br /><br /></div></div>
+</body></html>
